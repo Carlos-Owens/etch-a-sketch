@@ -4,15 +4,13 @@
   }
   
   #container {
-    justify-content: center;
     display: grid;
-    grid-gap: .5px;
-    grid-template-rows: repeat(var(--grid-rows), 50px);
-    grid-template-columns: repeat(var(--grid-cols), 50px);
-  }
-  
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), minmax(0, 2fr));
+}
+
   .grid-item {
     padding: 1em;
     border: 1px solid #ddd;
-    text-align: center;
-  }
+   
+}
